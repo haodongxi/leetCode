@@ -2,39 +2,35 @@ from typing import List
 def threeSumClosest( nums: List[int], target: int) -> int: 
     nums.sort()
     i = 0
-    lastSum = None
+    maxSum = None
     while i < len(nums)-2:
         l = i+1
         r = len(nums)-1
-        subLastSum = None
-        lastUp = None
-        ch = None
+        subMaxSum = None
         while l < r:
             nowSum = nums[i]+nums[l]+nums[r]
-            nowCh = target - nowSum
-            nowUp = None
             if  nowSum == target:
                 return target
-            elif (subLastSum == None and nowCh>0) or  (ch!=None and nowCh>ch):
-                r = r-1
-                nowUp = False
+            p = l+1
+            q = r-1
+            pSum = nowSum
+            qSum = nowSum
+            if p<r:
+                pSum = nums[i]+nums[p]+nums[r]
+            if q>l:
+                qSum = nums[i]+nums[l]+nums[q]
+            pChar = abs(pSum - target)
+            qChar = abs(qSum - target)
+            if pChar<qChar:
+                l = p
             else:
-                l = l+1
-                nowUp = True
-            if lastUp==None or lastUp == nowUp:
-                lastUp = nowUp
-                subLastSum = nowSum
-                ch = nowCh
-            else:
-                if nowSum>subLastSum:
-                    break
-                else :
-                    subLastSum = nowSum
-                    break
-        if lastSum==None or (((target - subLastSum)< (target - lastSum)) if ((target - subLastSum)*(target - lastSum))<0 else (abs(target - subLastSum)< abs(target - lastSum))):
-            lastSum = subLastSum
+                r = q
+            if subMaxSum == None or abs(target-subMaxSum)>abs(target-nowSum):
+                subMaxSum = nowSum
+        if maxSum == None or abs(target-maxSum)>abs(target-subMaxSum):
+            maxSum = subMaxSum
         i = i+1
-    return lastSum
+    return maxSum
 
 if __name__ == "__main__":
-    print(threeSumClosest([1,1,1,0],-100))
+    print(threeSumClosest([0,0,0,1],1))
