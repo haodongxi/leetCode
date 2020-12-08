@@ -7,7 +7,7 @@
 # print(a.split(","))
 # 1
 # [-4,-1,1,2]
-a = None
-a = 1
+# a = None
+# a = 1
 
-print(a)
+# print(a)
