@@ -11,3 +11,12 @@
 # a = 1
 
 # print(a)
+# s = '([{}])'
+# print(s[:1]+s[4:])
+# print(s[s.find(']'):])
+# print(s.find('1'))
+s = "([{}])"
+s = s.replace("()","")
+s = s.replace("{}","")
+s = s.replace("[]","")
+print(s)
