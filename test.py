@@ -1,3 +1,14 @@
+dict = {"()()":"","2":""}
+dict["()()()"]=1
+print(list(dict.keys()))
+
+# def insertStr(s,target,index):
+#     str_list = list(s)
+#     str_list.insert(index, target)
+#     a_b = ''.join(str_list)
+#     return a_b
+
+# print(insertStr("hds","(",2))
 # nums = [2,0,0]
 # d = {}
 # r = 1
@@ -15,13 +26,13 @@
 # print(s[:1]+s[4:])
 # print(s[s.find(']'):])
 # print(s.find('1'))
-s = "([{}])"
-s = s.replace("()","")
-s = s.replace("{}","")
-s = s.replace("[]","")
-print(s)
+# s = "([{}])"
+# s = s.replace("()","")
+# s = s.replace("{}","")
+# s = s.replace("[]","")
+# print(s)
 
-b = [0,1,2]
-a = b
-b = [9]
-print(a)
+# b = [0,1,2]
+# a = b
+# b = [9]
+# print(a)
