@@ -1,6 +1,11 @@
-dict = {"()()":"","2":""}
-dict["()()()"]=1
-print(list(dict.keys()))
+a = [0,1,2,'a']
+b = list(a)
+del a[3]
+print(a)
+print(id(b))
+# dict = {"()()":"","2":""}
+# dict["()()()"]=1
+# print(list(dict.keys()))
 
 # def insertStr(s,target,index):
 #     str_list = list(s)
