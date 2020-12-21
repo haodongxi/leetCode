@@ -1,8 +1,35 @@
-a = [0,1,2,'a']
-b = list(a)
-del a[3]
+
+a = [0,1,1,1,2,3,4,5]
+for i in range(0,len(a)):
+    if i == 1:
+        del a[i]
 print(a)
-print(id(b))
+
+
+# def productNode(l):
+#     if len(l)>0:
+#         alist = l
+#         head = ListNode(alist[0])
+#         first = head
+#         for a in alist[1:]:
+#             head.next = ListNode(a)
+#             head = head.next
+#         return first
+#     else:
+#         return None
+# def nodeToList(n:ListNode):
+#     a = []
+#     l = n
+#     while l!=None:
+#         a.append(l.val)
+#         l = l.next
+#     return a
+
+# a = [0,1,2,'a']
+# b = list(a)
+# del a[3]
+# print(a)
+# print(id(b))
 # dict = {"()()":"","2":""}
 # dict["()()()"]=1
 # print(list(dict.keys()))
