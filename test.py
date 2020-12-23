@@ -1,9 +1,13 @@
 
-a = [0,1,1,1,2,3,4,5]
-for i in range(0,len(a)):
-    if i == 1:
-        del a[i]
-print(a)
+str1 = "01234567"
+print(str1[0:2])
+
+
+# a = [0,1,1,1,2,3,4,5]
+# for i in range(0,len(a)):
+#     if i == 1:
+#         del a[i]
+# print(a)
 
 
 # def productNode(l):
