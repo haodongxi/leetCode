@@ -1,6 +1,11 @@
-
-str1 = "01234567"
-print(str1[0:2])
+a = ['w','d','dsdasdasd','ccc']
+b = ['d','w','ccc','dsdasdasd']
+print(a==b)
+a.sort()
+b.sort()
+print(a==b)
+# str1 = "01234567"
+# print(str1[0:0+4])
 
 
 # a = [0,1,1,1,2,3,4,5]
