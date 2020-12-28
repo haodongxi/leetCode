@@ -1,9 +1,31 @@
-a = ['w','d','dsdasdasd','ccc']
-b = ['d','w','ccc','dsdasdasd']
-print(a==b)
-a.sort()
-b.sort()
-print(a==b)
+j = 2
+nums = [1,3,2]
+minIndex = (nums[1:j+1])[::-1].index(min(nums[1:j+1]))
+print(min(nums[1:j+1]))
+print(minIndex)
+minIndex = len(nums[1:j+1]) - minIndex 
+print(minIndex)
+
+# def test(nums):
+#     nums.sort()
+
+# d = [3,2,1,4]
+
+# print(len(d)-d[::-1].index(4)-1)
+# d[0], d[1] = d[1], d[0]
+# print(d)
+
+
+
+# a = ['w','d','dsdasdasd','ccc']
+# b = ['d','w','ccc','dsdasdasd']
+# c = [3,2,1]
+# print(a==b)
+# a.sort()
+# b.sort()
+# print(a==b)
+# c.sort()
+# print(c)
 # str1 = "01234567"
 # print(str1[0:0+4])
 
