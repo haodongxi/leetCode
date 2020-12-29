@@ -1,10 +1,18 @@
 j = 2
+a = [3,2]
+a.sort()
+print(a)
 nums = [1,3,2]
-minIndex = (nums[1:j+1])[::-1].index(min(nums[1:j+1]))
-print(min(nums[1:j+1]))
-print(minIndex)
-minIndex = len(nums[1:j+1]) - minIndex 
-print(minIndex)
+b = nums[0:]
+b.sort()
+for index,c in enumerate(b):
+    print(index)
+
+# minIndex = (nums[1:j+1])[::-1].index(min(nums[1:j+1]))
+# print(min(nums[1:j+1]))
+# print(minIndex)
+# minIndex = len(nums[1:j+1]) - minIndex 
+# print(minIndex)
 
 # def test(nums):
 #     nums.sort()
