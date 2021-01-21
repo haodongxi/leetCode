@@ -1,6 +1,14 @@
-a = [1,2,3,4]
-a.append(None)
-print(a.copy())
+from functools import reduce
+# a = [1,2,3,4]
+# a.append(None)
+# print(a.copy())
+
+# a = [[0,1,2],[2,3,4],[0,1,2]]
+a = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+
+sum = reduce(lambda x,y: x+y,a)
+print(sum)
+
 
 # 0,3,6   0
 # 1,4,7   3

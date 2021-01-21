@@ -1,12 +1,29 @@
 from typing import List
+from functools import reduce
 
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        sum = reduce(lambda x,y: x+y,candidates)
+        if sum<target:
+            return []
         self.ssss = []
         candidates.sort()
         for index,a in enumerate(candidates):
             self.eachList(candidates[index:],target,[a])
-        return self.ssss
+        
+        result = []
+        for tempList in self.ssss:
+            isAdd = True
+            for a in tempList:
+                aCount = tempList.count(a)
+                cCount = candidates.count(a)
+                if aCount>cCount:
+                    isAdd = False
+                    break
+            if isAdd == True:
+                result.append(tempList)
+
+        return result
 
     def eachList(self,nums,target,ts):
         minNum = nums[0]
@@ -16,30 +33,23 @@ class Solution:
                 y = y-1
                 for _ in range(0,y):
                     ts.append(minNum)
-                self.ssss.append(ts)
+                if ts not in self.ssss:
+                    self.ssss.append(ts)
                 return True
              else:
                 return  False
         if target<minNum:
             return False
         if minNum == target:
-            self.ssss.append(ts)
+            if ts not in self.ssss:
+                self.ssss.append(ts)
             return ts
         for i in range(0,len(nums)):
             ts1 = ts.copy()
-            # ts2 = ts.copy()
             ts1.append(nums[i])
-            # ts2.append(nums[1])
             self.eachList(nums[i:],target-nums[0],ts1)
-            # self.eachList(nums[1:],target-nums[0],ts2)
 if __name__ == "__main__":
     s = Solution()
-    # s.combinationSum([3,6,7],7)
-    # s.combinationSum([2,3,6,7],14)
-    # print(s.combinationSum([2,3,5],8))
-    # s.combinationSum([2,3,4],8)
-    # s.combinationSum([7],7)
-    # s.combinationSum([6,7],7)
-    # s.combinationSum([7,8],7)
-    # print(s.combinationSum([3,5,8],11))
-    print(s.combinationSum([10,1,2,7,6,1,5],8))
+    # print(s.combinationSum([10,1,2,7,6,1,5],8))
+    # print(s.combinationSum([2,5,2,1,2],5))
+    print(s.combinationSum([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],27))
