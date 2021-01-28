@@ -3,11 +3,20 @@
 # print(a[2:])
 # print(max([]))
 
-print([ '0' for i in range(0,10)])
+# print([ '0' for i in range(0,10)])
 
 
-# from functools import reduce
-# a = [1,2,3,4]
+from functools import reduce
+
+a = [1,2,3,4]
+
+
+def strSum(str1,str2):
+    return str1+str2
+sum = reduce(lambda x,y:strSum(x,y),a)
+print(a[5])
+
+
 # a.append(None)
 # print(a.copy())
 
