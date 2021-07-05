@@ -3,18 +3,27 @@
 # print(a[2:])
 # print(max([]))
 
+# 
 # print([ '0' for i in range(0,10)])
 
 
-from functools import reduce
 
-a = [1,2,3,4]
+a = 'sssss  dddd'
+print(a.split(' '))
+
+# a = [100,1,2,3,4]
+# for (a,index) in enumerate(a):
+#     print(a)
+
+# from functools import reduce
+
+# a = [1,2,3,4]
 
 
-def strSum(str1,str2):
-    return str1+str2
-sum = reduce(lambda x,y:strSum(x,y),a)
-print(a[5])
+# def strSum(str1,str2):
+#     return str1+str2
+# sum = reduce(lambda x,y:strSum(x,y),a)
+# print(a[5])
 
 
 # a.append(None)
