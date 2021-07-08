@@ -7,5 +7,9 @@
 #
 class Solution:
     def replaceSpace(self , s ):
-        array = s.split(' ')
-        map(lambda x:)
+        return s.replace(' ','20%')
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.replaceSpace('sd sdsd    dsd'))
+        

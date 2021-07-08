@@ -9,6 +9,8 @@
 
 
 a = 'sssss  dddd'
+b = [1,2,3]
+print(b[3:])
 print(a.split(' '))
 
 # a = [100,1,2,3,4]
