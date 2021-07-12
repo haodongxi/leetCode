@@ -6,12 +6,20 @@
 # 
 # print([ '0' for i in range(0,10)])
 
+# print(1//2)
+# a = {}
+# a[1] = 1
+# print(list(a.keys()))
 
+for i in range(0,3):
+    print(i)
 
-a = 'sssss  dddd'
-b = [1,2,3]
-print(b[3:])
-print(a.split(' '))
+# a = 'sssss  dddd'
+# b = [1,2,3]
+# print(b[0:len(b)-1])
+# print(b[-1])
+# print(b[3:])
+# print(a.split(' '))
 
 # a = [100,1,2,3,4]
 # for (a,index) in enumerate(a):
