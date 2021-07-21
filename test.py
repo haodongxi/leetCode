@@ -1,3 +1,8 @@
+
+a = [for x in range(0,10)]
+a[1] = 10
+print(a)
+
 # a = [1,2,3,4,5,6]
 # print(a[:1])
 # print(a[2:])
@@ -11,8 +16,8 @@
 # a[1] = 1
 # print(list(a.keys()))
 
-for i in range(0,3):
-    print(i)
+# for i in range(0,3):
+#     print(i)
 
 # a = 'sssss  dddd'
 # b = [1,2,3]
