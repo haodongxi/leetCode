@@ -1,7 +1,11 @@
 
-a = [for x in range(0,10)]
-a[1] = 10
-print(a)
+# a = [x for x in range(0,10)]
+# a[1] = 10
+# print(a)
+
+a = [0]
+b = a[1:]
+print(b)
 
 # a = [1,2,3,4,5,6]
 # print(a[:1])

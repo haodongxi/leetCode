@@ -18,13 +18,15 @@ class Solution:
         return array  
     def reOrderArray2(self , array):
         nums = [0 for x in range(0,len(array))]
-        i = 0
-        j = len(array)-1
+        i,head = 0,0
+        j,tail = len(array)-1,len(array)-1
         while(i<len(array) and j>=0):
             if not self.isOS(array[i]):
-                nums[i] = array[i]
+                nums[head] = array[i]
+                head +=1
             if self.isOS(array[j]):
-                nums[j] = array[j]
+                nums[tail] = array[j]
+                tail-=1
             i += 1
             j -= 1
         return nums                      
