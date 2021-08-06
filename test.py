@@ -1,10 +1,18 @@
+a = [1,2,3,4]
+# b = [1,2,3,4]
+b = a.copy()
+b[1]=3
+print(a == b)
+
+
 
 # a = [x for x in range(0,10)]
 # a[1] = 10
 # print(a)
 
-a = []
-print(a[-1])
+# a = []
+# a.remove()
+# print(a[-1])
 
 # a = [1,2,3,4,5,6]
 # print(a[:1])
