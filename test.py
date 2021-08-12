@@ -1,8 +1,22 @@
-a = [1,2,3,4]
-# b = [1,2,3,4]
-b = a.copy()
-b[1]=3
-print(a == b)
+from typing import List, OrderedDict
+
+
+a = [2,1,3,4]
+# # b = [1,2,3,4]
+# b = a.copy()
+# b[1]=3
+# print(a == b)
+print(id(None))
+print(id(None))
+print(id(1))
+print(id(2))
+
+
+map = OrderedDict()
+map['1'] = 1
+print(list(map.keys()))
+
+# print(sorted(a))
 
 
 
