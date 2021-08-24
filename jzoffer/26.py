@@ -15,6 +15,17 @@ class Solution:
     def Convert(self , pRootOfTree:TreeNode):
         self.ReadFromCenter(pRootOfTree)
         
+        for (index,value) in enumerate(self.a):
+            if index+1<len(self.a):
+                value.right = self.a[index+1]
+            else:
+                value.right = None
+            if index-1>=0:
+                value.left = self.a[index-1]
+            else:
+                value.left = None
+        return self.a[0] if len(self.a)>0 else None
+        
     def ReadFromCenter(self,pRootOfTree:TreeNode):
         if pRootOfTree == None:
             return 

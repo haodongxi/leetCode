@@ -52,8 +52,8 @@ print(list(map.keys()))
 # print(a.split(' '))
 
 # a = [100,1,2,3,4]
-# for (a,index) in enumerate(a):
-#     print(a)
+for (a,index) in enumerate(a):
+    print(a)
 
 # from functools import reduce
 
