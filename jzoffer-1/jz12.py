@@ -14,7 +14,24 @@ class Solution:
         return res
 
 
+    def pivotIndex2(self, nums: List[int]) -> int:
+        res = -1
+        sum = reduce(lambda x,y:x+y,nums)
+        left_sum = 0
+        right_sum = sum
+        for k,v in enumerate(nums):
+            right_sum = right_sum - v
+            if right_sum == left_sum:
+                res = k
+                break
+            else:
+                left_sum += v
+            
+
+        return res
+
+
 if __name__ == '__main__':
     s = Solution()
-    res = s.pivotIndex([1,7,3,6,5,6])
+    res = s.pivotIndex2([1,7,3,6,5,6])
     print(res)
