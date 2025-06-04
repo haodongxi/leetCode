@@ -1,5 +1,15 @@
 
 
+# a = '1234'
+# b = a[1:10]
+# print(b)
+
+# s_count = [0] * 26
+# print(s_count)
+
+s = {}
+print('a' in s.keys())
+
 # a = {1:1,2:2}
 # print(a.keys())
 
@@ -26,12 +36,12 @@
 #     print(1)
 
 
-a = {'a':2,'b':3}
-b = {'b':3,'a':2}
+# a = {'a':2,'b':3}
+# b = {'b':3,'a':2}
 
-del a['a']
+# del a['a']
 
-print(a)
+# print(a)
 
 
 
