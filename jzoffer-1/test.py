@@ -7,8 +7,20 @@
 # s_count = [0] * 26
 # print(s_count)
 
-s = {}
-print('a' in s.keys())
+def cartesian_product(arrays):
+    if not arrays:
+        return [[]]
+    result = []
+    for x in arrays[0]:
+        for y in cartesian_product(arrays[1:]):
+            result.append([x] + y)
+    return result
+
+arrays = [[1, 2], [3], [4, 5]]
+print(cartesian_product(arrays))
+
+# s = {}
+# print('a' in s.keys())
 
 # a = {1:1,2:2}
 # print(a.keys())
