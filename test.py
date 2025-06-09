@@ -1,20 +1,24 @@
 from typing import List, OrderedDict
 
 
-a = [2,1,3,4]
+a = [1,2,3,4]
+a.insert(1,5)
+print(a)
+
+# a = [2,1,3,4]
 # # b = [1,2,3,4]
 # b = a.copy()
 # b[1]=3
 # print(a == b)
-print(id(None))
-print(id(None))
-print(id(1))
-print(id(2))
+# print(id(None))
+# print(id(None))
+# print(id(1))
+# print(id(2))
 
 
-map = OrderedDict()
-map['1'] = 1
-print(list(map.keys()))
+# map = OrderedDict()
+# map['1'] = 1
+# print(list(map.keys()))
 
 # print(sorted(a))
 
@@ -52,8 +56,8 @@ print(list(map.keys()))
 # print(a.split(' '))
 
 # a = [100,1,2,3,4]
-for (a,index) in enumerate(a):
-    print(a)
+# for (a,index) in enumerate(a):
+#     print(a)
 
 # from functools import reduce
 
