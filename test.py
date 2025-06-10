@@ -2,7 +2,9 @@ from typing import List, OrderedDict
 
 
 a = [1,2,3,4]
-a.insert(1,5)
+# a.insert(1,5)
+# print(a)
+a.pop(2)
 print(a)
 
 # a = [2,1,3,4]
