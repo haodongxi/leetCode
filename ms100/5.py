@@ -35,4 +35,4 @@ class Solution:
     
     def majorityElement2(self, nums: List[int]) -> int:
         nums.sort()
-        nums[len(nums)//2]
+        return nums[len(nums)//2]
